@@ -1,1 +1,7 @@
-# study_inflearn_nondev_allinone
+# 인프런 강의 스터디_비전공자를 위한 올인원 개발 클래스
+
+
+### 1. VSCode 설치
+
+
+### Html & Css 기본
