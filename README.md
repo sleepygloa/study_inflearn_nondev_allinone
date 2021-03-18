@@ -30,3 +30,27 @@
 
 - flex 전체 기능은 ? 
 > flex : 1 1 50xp; //
+
+
+
+### 3. Javascript
+
+
+
+### 4. 개요
+
+##### 비동기처리
+```
+fetch('http://www.sleepygloa.xyz')
+.then(function(response){
+    console.log('실행완료')
+}).catch(function(error){
+    console.log('에러발생')
+}); 
+console.log('나는바로 실행되지')
+```
+
+> 나는바로 실행되지
+
+> 에러발생
+
