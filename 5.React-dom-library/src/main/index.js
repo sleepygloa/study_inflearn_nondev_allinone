@@ -2,11 +2,16 @@ import React from 'react'
 import './index.css'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime'
+import {API_URL} from '../config/constants.js'
+
+dayjs.extend(relativeTime);
 
 function MainPage(){
     const [products, setProducts] = React.useState([])
     React.useEffect(function(){
-            axios.get('https://1fa0fd75-de66-4fe1-a942-62dcf7ac7994.mock.pstmn.io/products')
+            axios.get(`${API_URL}/products`)
             .then(function(result){
                 const products = result.data.products;
                 console.log(result);
@@ -21,7 +26,7 @@ function MainPage(){
             <div id="banner">
                 <img src="images/banners/banner1.png" />
             </div>
-            <h1>판매되는 상품들</h1>
+            <h1 id="product-headline">판매되는 상품들</h1>
             <div id="product-list">
                 {
                     products.map(function(product, index){
@@ -29,7 +34,7 @@ function MainPage(){
                                 <div className="product-card">
                                     <Link className="product-link" to={`/product/${product.id}`}>
                                         <div>
-                                            <img className="product-img" src={product.imageUrl} />
+                                            <img className="product-img" src={`${API_URL}/${product.imageUrl}`} />
                                         </div>
                                         <div className="product-contents">
                                             <span className="product-name">
@@ -38,9 +43,12 @@ function MainPage(){
                                             <span className="product-price">
                                                 {product.price}원
                                             </span>
-                                            <div className="product-select">
-                                                <img className="product-avatar" src="images/icons/avatar.png" />
-                                                <span>{product.seller}</span>
+                                            <div id="product-footer">
+                                                <div className="product-select">
+                                                    <img className="product-avatar" src="images/icons/avatar.png" />
+                                                    <span>{product.seller}</span>
+                                                </div>
+                                                <span>{dayjs(product.createdAt).fromNow()}</span>
                                             </div>
                                         </div>
                                     </Link>
