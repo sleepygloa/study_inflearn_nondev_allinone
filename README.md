@@ -8,11 +8,11 @@
 
 
 관련한 확인 자료는
-1. 클라이언트 깃헙 : 
-2. 백엔드 깃헙 : 
+1. 클라이언트 깃헙 :  https://github.com/sleepygloa/study_inflearn_nondev_allinone_client
+2. 백엔드 깃헙 :  https://github.com/sleepygloa/study_inflearn_nondev_allinone_backend
 
 관련한 화면 은
-URL : 
+URL : https://study-inflearn-nondev-allinone-client.vercel.app/
 ANDROID : 
 IOS : 
 
