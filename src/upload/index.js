@@ -2,7 +2,7 @@
 import React from 'react'
 import {Button, Divider, Form, Input, InputNumber, Upload, message} from "antd";
 import './index.css';
-import {useState} from 'react';
+//import {useState} from 'react';
 import {API_URL} from '../config/constants.js'
 import axios from 'axios'
 import {useHistory} from 'react-router-dom'
@@ -46,10 +46,10 @@ function UploadPage(){
                     onChange={onChangeImage}
                     >
                         {imageUrl ? 
-                            (<img id="upload-img" src={`${API_URL}/${imageUrl}`} />)
+                            (<img id="upload-img" src={`${API_URL}/${imageUrl}`}  alt="상품사진"/>)
                             :
                             (<div id="upload-img-placeholder">
-                                <img src="/images/icons/camera.png" />
+                                <img src="/images/icons/camera.png" alt="이미지를 업로드해주세요"/>
                                 <span>이미지를 업로드해주세요.</span>
                             </div>)
                         }
