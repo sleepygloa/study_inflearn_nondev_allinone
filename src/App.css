@@ -46,4 +46,8 @@ html, body, #root, #root > div{
   #body{
     padding: 0 10px;
   }
+
+  .ant-carousel{
+    margin:0 -8px;
+  }
 }
