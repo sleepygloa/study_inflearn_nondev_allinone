@@ -7,9 +7,11 @@
 클라이언트(React, React Native), 백엔드(NodeJs) 개발 및 서버 배포까지 진행하고 추가로 Tensorflowjs를 이용한 머신러닝 도입해보는 공부를 한 결과 자료입니다.
 
 
+
 관련한 확인 자료는
-1. 클라이언트 깃헙 :  https://github.com/sleepygloa/study_inflearn_nondev_allinone_client
-2. 백엔드 깃헙 :  https://github.com/sleepygloa/study_inflearn_nondev_allinone_backend
+1. 클라이언트(react) 깃헙 :  https://github.com/sleepygloa/study_inflearn_nondev_allinone_client
+2. 백엔드(node) 깃헙 :  https://github.com/sleepygloa/study_inflearn_nondev_allinone_backend
+3. 모바일(react-native) 깃헙 : https://github.com/sleepygloa/study_inflearn_nondev_allinone_mobile
 
 관련한 화면 은
 URL : https://study-inflearn-nondev-allinone-client.vercel.app/
